@@ -22,6 +22,7 @@ export class BuscarComponent implements OnInit {
         // this.reloadComponent();
         this.buscar = this.buscarTxt; 
         this.buscarPelicula();
+        // location.reload();
         // this.reloadComponent();
         
       }
@@ -33,7 +34,8 @@ export class BuscarComponent implements OnInit {
   }
 
   buscarPelicula(){
-    this.ngOnInit();
+    // this.ngOnInit();
+
     if(this.buscar.length==0){
       return;
     }

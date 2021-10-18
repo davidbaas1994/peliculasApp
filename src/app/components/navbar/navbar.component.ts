@@ -26,6 +26,7 @@ export class NavbarComponent implements OnInit {
     // console.log(this.buscarTxt);
     // this.buscarTxt = this.route.snapshot.paramMap.get('texto');
     this.router.navigate(['/buscar', this.buscarTxt]);
+    
   }
   }
 

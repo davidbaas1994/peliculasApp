@@ -19,6 +19,8 @@ import { GaleriaComponent } from './components/home/galeria.component';
 import { BuscarComponent } from './components/buscar/buscar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarteleraComponent } from './components/cartelera/cartelera.component';
+import { PopularesComponent } from './components/populares/populares.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     PeliculaImagenPipe,
     GaleriaComponent,
-    BuscarComponent
+    BuscarComponent,
+    CarteleraComponent,
+    PopularesComponent
   ],
   imports: [
     BrowserModule,
