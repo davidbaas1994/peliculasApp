@@ -1,0 +1,15 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">Películas </h1>
+    </div>
+</div>
+<div class="container">
+    
+ <app-galeria [peliculas]="carteleraR|slice:0:6" 
+ [titulo]="'Peliculas en cartelera'"></app-galeria>
+
+ <app-galeria [peliculas]="popularesR|slice:0:6" 
+ [titulo]="'Peliculas populares'"></app-galeria>
+
+ 
+</div>

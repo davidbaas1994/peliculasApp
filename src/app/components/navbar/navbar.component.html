@@ -1,0 +1,40 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+
+  <mdb-navbar-brand>
+    <a class="navbar-brand" href="#">
+      <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" class="d-inline-block align-top" alt="">
+    </a>
+  </mdb-navbar-brand>
+
+  <mdb-icon fas icon="angle-left" size="lg" class="text-white mr-auto d-flex d-md-none align-self-center"></mdb-icon>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link waves-light" [routerLink]="['/home']" mdbWavesEffect>Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" [routerLink]="['/buscar']" mdbWavesEffect>Buscar</a>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+
+    <!-- Search form -->
+    <form class="form-inline waves-light waves-light ml-auto" (ngSubmit)="buscarPelicula()" mdbWavesEffect>
+      <div class="md-form my-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Buscar" name="buscarTxt" aria-label="buscar" [(ngModel)]="buscarTxt" >
+          <button mdbBtn color="primary" outline="true" size="sm" class="my-0 waves-light" type="submit" mdbWavesEffect>Buscar</button>
+      </div>
+      </form>
+  </links>
+  <!-- Collapsible content -->
+
+
+</mdb-navbar>
+<!--/.Navbar-->
