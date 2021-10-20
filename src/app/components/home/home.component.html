@@ -1,6 +1,6 @@
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h1 class="display-3">Películas </h1>
+<div class=" divTitulo">
+    <div class="container ">
+        <h1 class="display-3">App de películas </h1>
     </div>
 </div>
 <div class="container">
@@ -8,8 +8,13 @@
  <app-galeria [peliculas]="carteleraR|slice:0:6" 
  [titulo]="'Películas en cartelera'"></app-galeria>
 
+ <button type="button" [routerLink]="['/cartelera']" class="btn btn-primary btn-block">Ver más...</button>
+
+
  <app-galeria [peliculas]="popularesR|slice:0:6" 
  [titulo]="'Películas populares'"></app-galeria>
+
+ <button type="button" [routerLink]="['/populares']" class="btn btn-primary btn-block">Ver más...</button>
 
  
 </div>

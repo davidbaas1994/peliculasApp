@@ -1,1 +1,20 @@
-<p>populares works!</p>
+<div class="container main-container">
+    <h2>Pelis más populares</h2>
+
+<div class="row">
+ 
+    <div class="card-columns">
+        <div class="card" *ngFor="let pelicula of popularesR">
+          <img class="card-img-top" [src]="pelicula | peliculaImagen" [alt]="pelicula.original_title">
+          <div class="card-body">
+            <h5 class="card-title">{{pelicula.original_title}}</h5>
+            <p class="card-text text-justify">{{ pelicula.overview | slice:0:250 }} ...</p>
+            <button type="button" [routerLink]="['/pelicula', pelicula.id, 'populares']" class="btn btn-outlet-primary btn-block">Ver más...</button>
+          </div>
+        </div>
+        
+      </div>
+
+</div>
+
+</div>

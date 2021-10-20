@@ -21,6 +21,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarteleraComponent } from './components/cartelera/cartelera.component';
 import { PopularesComponent } from './components/populares/populares.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PopularesComponent } from './components/populares/populares.component';
     GaleriaComponent,
     BuscarComponent,
     CarteleraComponent,
-    PopularesComponent
+    PopularesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

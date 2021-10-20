@@ -14,8 +14,7 @@ const routes: Routes = [
   { path: 'cartelera', component: CarteleraComponent },
   { path: 'populares', component: PopularesComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
-
-
+  
 ];
 
 @NgModule({
