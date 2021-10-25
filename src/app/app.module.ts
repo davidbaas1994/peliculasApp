@@ -22,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarteleraComponent } from './components/cartelera/cartelera.component';
 import { PopularesComponent } from './components/populares/populares.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BuscarComponent,
     CarteleraComponent,
     PopularesComponent,
-    FooterComponent
+    FooterComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

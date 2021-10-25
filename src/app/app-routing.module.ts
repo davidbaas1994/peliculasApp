@@ -5,6 +5,7 @@ import { BuscarComponent } from './components/buscar/buscar.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
 import { CarteleraComponent } from './components/cartelera/cartelera.component';
 import { PopularesComponent } from './components/populares/populares.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -13,8 +14,11 @@ const routes: Routes = [
   { path: 'pelicula/:id/:pag', component: PeliculaComponent },
   { path: 'cartelera', component: CarteleraComponent },
   { path: 'populares', component: PopularesComponent},
-  { path: '**', pathMatch: 'full', redirectTo: 'home' }
-  
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  {
+    path: '**',
+    component: NotFoundComponent
+  }
 ];
 
 @NgModule({
